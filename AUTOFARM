@@ -5,11 +5,9 @@
 
 local InjectionError = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
-local Blocks_Texture = Instance.new("ImageLabel")
 local UICorner = Instance.new("UICorner")
-local Message_Error = Instance.new("TextLabel")
-local UICorner_2 = Instance.new("UICorner")
-local signal_wifi_off = Instance.new("ImageButton")
+local cloud_off = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
@@ -19,42 +17,27 @@ InjectionError.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = InjectionError
 Frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Frame.Position = UDim2.new(0.470193744, -50, 0.5, -50)
-Frame.Size = UDim2.new(0, 180, 0, 70)
+Frame.Position = UDim2.new(0.508183777, -50, 0.495061696, -50)
+Frame.Size = UDim2.new(0, 70, 0, 62)
 
-Blocks_Texture.Name = "Blocks_Texture"
-Blocks_Texture.Parent = Frame
-Blocks_Texture.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
-Blocks_Texture.BackgroundTransparency = 1.000
-Blocks_Texture.Size = UDim2.new(0, 180, 0, 70)
-Blocks_Texture.ZIndex = 9
-Blocks_Texture.Image = "rbxassetid://159991693"
-Blocks_Texture.ImageTransparency = 0.600
-Blocks_Texture.ScaleType = Enum.ScaleType.Tile
-Blocks_Texture.SliceCenter = Rect.new(0, 256, 0, 256)
-Blocks_Texture.TileSize = UDim2.new(0, 30, 0, 30)
+UICorner.Parent = Frame
 
-UICorner.Parent = Blocks_Texture
+cloud_off.Name = "cloud_off"
+cloud_off.Parent = Frame
+cloud_off.BackgroundTransparency = 1.000
+cloud_off.Position = UDim2.new(0.313167065, 0, 0.183174059, 0)
+cloud_off.Size = UDim2.new(0, 25, 0, 25)
+cloud_off.ZIndex = 2
+cloud_off.Image = "rbxassetid://3926305904"
+cloud_off.ImageRectOffset = Vector2.new(524, 844)
+cloud_off.ImageRectSize = Vector2.new(36, 36)
 
-Message_Error.Name = "Message_Error"
-Message_Error.Parent = Frame
-Message_Error.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Message_Error.BackgroundTransparency = 1.000
-Message_Error.Position = UDim2.new(-0.0277777612, 0, -0.189999998, 0)
-Message_Error.Size = UDim2.new(0, 190, 0, 50)
-Message_Error.Font = Enum.Font.FredokaOne
-Message_Error.Text = "Script DATA isn`t working"
-Message_Error.TextColor3 = Color3.fromRGB(255, 255, 255)
-Message_Error.TextSize = 16.000
-
-UICorner_2.Parent = Frame
-
-signal_wifi_off.Name = "signal_wifi_off"
-signal_wifi_off.Parent = InjectionError
-signal_wifi_off.BackgroundTransparency = 1.000
-signal_wifi_off.Position = UDim2.new(0.490312964, 0, 0.483950615, 0)
-signal_wifi_off.Size = UDim2.new(0, 25, 0, 25)
-signal_wifi_off.ZIndex = 2
-signal_wifi_off.Image = "rbxassetid://3926305904"
-signal_wifi_off.ImageRectOffset = Vector2.new(884, 324)
-signal_wifi_off.ImageRectSize = Vector2.new(36, 36)
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.938423634, 0, 0.459677398, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Bangers
+TextLabel.Text = "Offline"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
